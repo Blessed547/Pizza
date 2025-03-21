@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza Order Form</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Slice of Heaven Pizza</h1>
+            <!-- Student info will be added here by JavaScript -->
+            <p id="student-info"></p>
+        </header>
+
+        <form id="pizza-form">
+            <div class="form-section">
+                <h2>Pizza Basics</h2>
+                
+                <div class="form-group">
+                    <label for="name">Your Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="size">Pizza Size:</label>
+                    <select id="size" name="size" required>
+                        <option value="">-- Select Size --</option>
+                        <option value="small">Small (10")</option>
+                        <option value="medium">Medium (12")</option>
+                        <option value="large">Large (14")</option>
+                        <option value="x-large">Extra Large (16")</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="crust">Crust Type:</label>
+                    <select id="crust" name="crust" required>
+                        <option value="">-- Select Crust --</option>
+                        <option value="thin">Thin & Crispy</option>
+                        <option value="regular">Regular</option>
+                        <option value="thick">Thick</option>
+                        <option value="stuffed">Cheese Stuffed</option>
+                        <option value="gluten-free">Gluten Free (+$2)</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="sauce">Sauce:</label>
+                    <select id="sauce" name="sauce" required>
+                        <option value="">-- Select Sauce --</option>
+                        <option value="tomato">Classic Tomato</option>
+                        <option value="bbq">BBQ</option>
+                        <option value="white">White (Garlic Parmesan)</option>
+                        <option value="buffalo">Buffalo</option>
+                        <option value="pesto">Pesto</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="cheese">Cheese Option:</label>
+                    <select id="cheese" name="cheese" required>
+                        <option value="">-- Select Cheese --</option>
+                        <option value="regular">Regular Mozzarella</option>
+                        <option value="extra">Extra Cheese (+$1)</option>
+                        <option value="blend">Three Cheese Blend (+$1.50)</option>
+                        <option value="vegan">Vegan Cheese (+$2)</option>
+                        <option value="none">No Cheese</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="form-section">
+                <h2>Toppings</h2>
+                <p class="info-text">Select up to 5 toppings (First 2 free, $0.75 each additional)</p>
+                
+                <div class="toppings-container">
+                    <div class="toppings-column">
+                        <h3>Meats</h3>
+                        <div class="checkbox-group">
+                            <input type="checkbox" id="pepperoni" name="toppings" value="pepperoni">
+                            <label for="pepperoni">Pepperoni</label>
+                        </div>
+                        <div class="checkbox-group">
+                            <input type="checkbox" id="sausage" name="toppings" value="sausage">
+                            <label for="sausage">Italian Sausage</label>
+                        </div>
+                        <div class="checkbox-group">
+                            <input type="checkbox" id="ham" name="toppings" value="ham">
+                            <label for="ham">Ham</label>
+                        </div>
+                        <div class="checkbox-group">
+                            <input type="checkbox" id="bacon" name="toppings" value="bacon">
+                            <label for="bacon">Bacon</label>
+                        </div>
+                        <div class="checkbox-group">
+                            <input type="checkbox" id="chicken" name="toppings" value="chicken">
+                            <label for="chicken">Grilled Chicken</label>
+                        </div>
+                    </div>
+                    
+                    <div class="toppings-column">
+                        <h3>Vegetables</h3>
+                        <div class="checkbox-group">
+                            <input type="checkbox" id="mushrooms" name="toppings" value="mushrooms">
+                            <label for="mushrooms">Mushrooms</label>
+                        </div>
+                        <div class="checkbox-group">
+                            <input type="checkbox" id="onions" name="toppings" value="onions">
+                            <label for="onions">Onions</label>
+                        </div>
+                        <div class="checkbox-group">
+                            <input type="checkbox" id="green-peppers" name="toppings" value="green-peppers">
+                            <label for="green-peppers">Green Peppers</label>
+                        </div>
+                        <div class="checkbox-group">
+                            <input type="checkbox" id="black-olives" name="toppings" value="black-olives">
+                            <label for="black-olives">Black Olives</label>
+                        </div>
+                        <div class="checkbox-group">
+                            <input type="checkbox" id="tomatoes" name="toppings" value="tomatoes">
+                            <label for="tomatoes">Fresh Tomatoes</label>
+                        </div>
+                    </div>
+                    
+                    <div class="toppings-column">
+                        <h3>Premium</h3>
+                        <div class="checkbox-group">
+                            <input type="checkbox" id="feta" name="toppings" value="feta">
+                            <label for="feta">Feta Cheese</label>
+                        </div>
+                        <div class="checkbox-group">
+                            <input type="checkbox" id="spinach" name="toppings" value="spinach">
+                            <label for="spinach">Spinach</label>
+                        </div>
+                        <div class="checkbox-group">
+                            <input type="checkbox" id="pineapple" name="toppings" value="pineapple">
+                            <label for="pineapple">Pineapple</label>
+                        </div>
+                        <div class="checkbox-group">
+                            <input type="checkbox" id="jalapenos" name="toppings" value="jalapenos">
+                            <label for="jalapenos">Jalapeños</label>
+                        </div>
+                        <div class="checkbox-group">
+                            <input type="checkbox" id="artichoke" name="toppings" value="artichoke">
+                            <label for="artichoke">Artichoke Hearts</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-section">
+                <h2>Special Instructions</h2>
+                <div class="form-group">
+                    <textarea id="instructions" name="instructions" placeholder="Any special requests? (e.g., extra crispy, light on sauce, etc.)"></textarea>
+                </div>
+            </div>
+
+            <div class="form-actions">
+                <button type="submit" id="order-btn">Place Pizza Order</button>
+                <button type="reset" id="reset-btn">Reset Form</button>
+            </div>
+        </form>
+
+        <div id="order-confirmation" class="hidden">
+            <h2>Your Pizza Order</h2>
+            <div id="pizza-details"></div>
+            <button id="new-order-btn">Start New Order</button>
+        </div>
+
+        <footer>
+            <p>&copy; 2025 Slice of Heaven Pizza. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>
