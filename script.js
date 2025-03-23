@@ -4,8 +4,8 @@
  */
 
 // Student information - to be displayed on the page
-const STUDENT_ID = "12345678"; // Replace with your actual student ID
-const STUDENT_NAME = "John Smith"; // Replace with your actual name
+const STUDENT_ID = "200597146"; 
+const STUDENT_NAME = "Lovepreet Singh Lovepreet Singh"; 
 
 // Wait for the DOM to be fully loaded
 document.addEventListener('DOMContentLoaded', function() {
